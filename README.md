@@ -4,11 +4,24 @@ https://github.com/MakremDJEBALI/retail-sales-forecasting
 
 ## Objectif du projet
 
-Développer un système de détection des anomalies et de prévision des ventes quotidiennes pour les magasins Intermarché, en s’appuyant sur 10 ans de données transactionnelles (niveau ticket-ligne). L’objectif est de fournir :
+Le projet vise à mettre en place un système complet de détection d’anomalies et de prévision des ventes quotidiennes pour les magasins Intermarché. Plus précisément :
 
-- Un diagnostic précis de la qualité des données et des points aberrants  
-- Une comparaison de plusieurs modèles de forecasting  
-- Des recommandations pour le déploiement en production  
+1. **Assurer la qualité des données**  
+   - Vérifier l’intégrité temporelle (dates manquantes)  
+   - Identifier et comprendre les outliers via méthodes statistiques (IQR) et apprentissage machine (Isolation Forest, Prophet)
+
+2. **Développer et comparer plusieurs modèles de forecasting**  
+   - Baselines linéaires (SARIMA, SARIMAX) pour capturer tendance et saisonnalité  
+   - Approches non linéaires (RandomForest, Prophet, CatBoost) sur lags et variables métier  
+   - Évaluation rigoureuse (MAE, MAPE) sur une période hors-échantillon (nov.–déc. 2023) et prévision pour janvier 2024
+
+3. **Industrialiser la solution**  
+   - Automatisation du pipeline (Airflow/Kedro) et conteneurisation (Docker/Kubernetes)  
+   - Monitoring continu (MLflow, Grafana/Prometheus) et plan de ré-entraînement mensuel
+
+4. **Répondre à la question métier**  
+   - Protocole A/B (Difference-in-Differences, matching ou synthetic control) pour mesurer l’impact d’une innovation (bouteilles verre vs canettes alu)
+
 
 ## Structure du projet
 
