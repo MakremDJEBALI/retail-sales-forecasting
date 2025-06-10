@@ -4,7 +4,7 @@ https://github.com/MakremDJEBALI/retail-sales-forecasting
 
 ## Objectif du projet
 
-Le projet vise à mettre en place un système complet de détection d’anomalies et de prévision des ventes quotidiennes pour les magasins Intermarché. Plus précisément :
+Le projet vise à mettre en place un système de prévision des ventes quotidiennes pour les magasins Intermarché avec la détection d’anomalies. Plus précisément :
 
 1. **Assurer la qualité des données**  
    - Vérifier l’intégrité temporelle (dates manquantes)  
