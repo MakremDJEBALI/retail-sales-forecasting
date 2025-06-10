@@ -1,0 +1,9 @@
+.venv/
+catboost_info/
+/catboost_info/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+data/dataset_case.csv
+.DS_Store
+*.log
